@@ -3,6 +3,8 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import Title from "../shared/Title";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
+import ChatList from "../specific/ChatList";
+import { samepleChats } from "../../constants/sampleData";
 
 const AppLayout = () => (WrappedComponent) => {
   return (props) => {
@@ -20,7 +22,14 @@ const AppLayout = () => (WrappedComponent) => {
               display: { xs: "none", sm: "block" },
             }}
             height={"100%"}
-          ></Grid>
+          >
+            <ChatList
+              chats={samepleChats}
+              chatId={"1"}
+              newMessagesAlert={[{ chatId: "1", count: 0 }]}
+              onlineUsers={["1","2"]}
+            />
+          </Grid>
           <Grid item xs={12} sm={8} md={5} lg={6} height={"100%"}>
             <WrappedComponent {...props} />
           </Grid>
