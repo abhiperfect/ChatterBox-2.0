@@ -33,19 +33,19 @@ const Header = () => {
 
   const openSearch = () => {
     startTransition(() => {
-      setIsSearch(!isSearch);
+      setIsSearch((prev) => !prev);
     });
   };
 
   const openNewGroup = () => {
     startTransition(() => {
-      setIsNewGroup(!isNewGroup);
+      setIsNewGroup((prev) => !prev);
     });
   };
 
   const openNotification = () => {
     startTransition(() => {
-      setIsNotification(!isNotification);
+      setIsNotification((prev) => !prev);
     });
   };
 
