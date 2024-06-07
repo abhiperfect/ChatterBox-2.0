@@ -26,7 +26,7 @@ const UserItem = ({
         <Typography
           variant="body1"
           sx={{
-            flexGlow: 1,
+            flexGrow: 1,
             display: "-webkit-box",
             WebkitLineClamp: 1,
             WebkitBoxOrient: "vertical",
