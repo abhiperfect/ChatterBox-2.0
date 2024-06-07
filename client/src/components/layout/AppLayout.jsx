@@ -5,6 +5,7 @@ import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import ChatList from "../specific/ChatList";
 import { samepleChats } from "../../constants/sampleData";
+import Profile from "../specific/Profile";
 
 const AppLayout = () => (WrappedComponent) => {
   return (props) => {
@@ -44,7 +45,9 @@ const AppLayout = () => (WrappedComponent) => {
               padding: "2rem",
               bgcolor: "rgba(0,0,0,0.85)",
             }}
-          ></Grid>
+          >
+            <Profile/>
+          </Grid>
         </Grid>
       </>
     );
