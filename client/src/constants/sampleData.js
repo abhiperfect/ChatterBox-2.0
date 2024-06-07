@@ -67,7 +67,7 @@ export const sampleMessage = [
       },
     ],
     content: "",
-    _id: "sfnsdjkfsdnfkdddjsbnd",
+    _id: "1",
     sender: {
       _id: "sdfsdfsdf",
       name: "Chaman  2",

@@ -14,7 +14,9 @@ import {
 } from "@mui/icons-material";
 import { InputBox } from "../components/styles/StyledComponents";
 import { useNavigate } from "react-router-dom";
-// import MessageComponent from "../components/MessageComponent"; // Ensure correct path
+import MessageComponent from "../components/shared/MessageComponent"; // Ensure correct path
+import { sampleMessage } from "../constants/sampleData";
+
 // import TypingLoader from "../components/TypingLoader"; // Ensure correct path
 // import FileMenu from "../components/FileMenu"; // Ensure correct path
 
@@ -111,9 +113,9 @@ const Chat = ({ chatId, user }) => {
           overflowY: "auto",
         }}
       >
-        {/* {messages.map((i) => (
+        {sampleMessage.map((i) => (
           <MessageComponent key={i._id} message={i} user={user} />
-        ))} */}
+        ))}
 
         {/* {userTyping && <TypingLoader />} */}
 
